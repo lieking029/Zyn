@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Nav from "./components/Nav";
+import Index from "./components/pages/Index";
+import { Routes, Route } from "react-router-dom";
+import Users from "./components/pages/Users";
+import Claim from "./components/pages/Claim";
+import Sample from "./components/pages/Sample";
+import Encounter from "./components/pages/Encounters";
+import Map from "./components/pages/Map";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+        <Nav />
+        <Routes>
+          <Route path="/" exact element={<Index />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/claim" element={ <Claim /> } />
+          <Route path="/sample" element={ <Sample /> } />
+          <Route path="/encounters" element={ <Encounter /> } /> 
+          <Route path="/map" element={ <Map /> } />
+        </Routes>
     </div>
   );
-}
+};
 
 export default App;
