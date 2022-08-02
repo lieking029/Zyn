@@ -5,7 +5,7 @@ const DataTables = () => {
 
   return (
     <div className='p-5'>
-      <form class="form-inline d-flex flex-row-reverse form-sm">
+      <form class="form-inline d-flex flex-row-reverse form-sm mb-3">
         <input class="form-control form-control-sm mr-3 w-25" type="text" placeholder="Search"
         aria-label="Search" />
       <i class="fas fa-search" aria-hidden="true"></i>

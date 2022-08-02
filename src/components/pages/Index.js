@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Chart from "../charts/Chart";
+import Chart1 from "../charts/Chart1";
+import Chart2 from "../charts/Chart2";
 import DataTables from "../DataTables";
-// import PieChart from "../PieChart";
 
 const index = () => {
   return (
@@ -19,8 +21,11 @@ const index = () => {
                 to="/encounters"
                 className="card-title h1 text-decoration-none"
               >
-                10
+                10 
               </Link>
+              <div className="d-flex justify-content-center">
+              <Chart />
+              </div>
             </div>
           </div>
         </div>
@@ -34,6 +39,9 @@ const index = () => {
               <Link to="/sample" className="card-title h1 text-decoration-none">
                 10
               </Link>
+              <div className="d-flex justify-content-center">
+              <Chart1 />
+              </div>
             </div>
           </div>
         </div>
@@ -47,26 +55,16 @@ const index = () => {
               <Link to="/claim" className="card-title h1 text-decoration-none">
                 10
               </Link>
+              <div className="d-flex justify-content-center">
+              <Chart2 />
+              </div>
             </div>
           </div>
         </div>
       </div>
-{/* 
-      <div className="d-flex justify-content-center">
-        <PieChart />
-      </div> */}
-
-      {/* <div className="row mt-4 justify-content-center">
-        <div className="col-3">
-          <canvas id="myChart1" style={{width: "100%"}}></canvas>
+      <div>
+          <DataTables />
         </div>
-        <div className="col-3">
-          <canvas id="myChart2" style={{width: "100%"}}></canvas>
-        </div>
-        <div className="col-3">
-          <canvas id="myChart3" style={{width: "100%"}}></canvas>
-        </div>
-      </div> */}
 
       <div className="row justify-content-center mt-5">
         <div className="col-9">
@@ -83,12 +81,7 @@ const index = () => {
           <br />
         </div>
       </div>
-        <div>
-          <DataTables />
-        </div>
-      <script>
-        {/* let myChart1 = document.getElementById('myChart1').getContext('2d'); */}
-      </script>
+        
     </div>
   );
 };

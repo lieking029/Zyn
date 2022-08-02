@@ -27,6 +27,13 @@ const Form = () => {
         </div>
         <div class="form-outline mb-4">
           <input
+            type="text"
+            placeholder="Extension Name"
+            class="form-control form-control-lg"
+          />
+        </div>
+        <div class="form-outline mb-4">
+          <input
             type="email"
             placeholder="Email"
             class="form-control form-control-lg"
