@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PieChart from "../PieChart";
+import DataTables from "../DataTables";
+// import PieChart from "../PieChart";
 
 const index = () => {
   return (
@@ -82,7 +83,9 @@ const index = () => {
           <br />
         </div>
       </div>
-
+        <div>
+          <DataTables />
+        </div>
       <script>
         {/* let myChart1 = document.getElementById('myChart1').getContext('2d'); */}
       </script>

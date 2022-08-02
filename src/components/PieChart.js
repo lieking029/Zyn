@@ -5,16 +5,16 @@ import { Pie } from "react-chartjs-2";
 
 ChartJs.register(Tooltip, Title, ArcElement, Legend);
 
-const data = {
-  datasets: [
-    {
-      data: [10, 20, 30],
-      backgroundColor: ["red", "blue", "yellow"],
-    },
-  ],
+// const data = {
+//   datasets: [
+//     {
+//       data: [10, 20, 30],
+//       backgroundColor: ["red", "blue", "yellow"],
+//     },
+//   ],
 
-  labels: ["Pink", "Yellow", "Blue"],
-};
+//   labels: ["Pink", "Yellow", "Blue"],
+// };
 
 const PieChart = () => {
   const [data, setData] = useState({
